@@ -5,9 +5,9 @@ from nltk.chat.util import Chat
 nltk.download('punkt')
 nltk.download('wordnet')
 pairs = [
-    ["hello", "Hi there!"],
-    ["how are you?", "I'm doing well, thanks for asking."],
-    ["what is your name?", "My name is Chatbot."],
+    ["Happy", "Birthday"],
+    ["- IQRA <3", "May ALLAH grant you with lots of love, health, happiness, adventures, luck. beauty and excietment in your life."],
+    ["I Love You."],
 ]
 def chatbot():
     chat = Chat(pairs, reflection="you")
@@ -16,7 +16,7 @@ def chatbot():
         user_input = input("> ")
         if user_input.lower() == 'quit':
             break
-        print(chat.respond(user_input))
+        print(chat.respond(- I LOVE YOU <3))
 
 if __name__ == "__main__":
     chatbot()
